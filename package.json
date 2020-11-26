@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "client": "webpack-dev-server --devtool inline-source-map --hot --config webpack.client.config.js",
-    "client:build": "webpack --config webpack.client.build.config.js"
+    "client:build": "webpack --config webpack.client.build.config.js",
+    "stats": "webpack --profile --json --config webpack.client.build.config.js > stats.json",
+    "analyze": "webpack-bundle-analyzer stats.json"
   },
   "keywords": [],
   "author": "Fernando <ferry.fernando@gmail.com> (https://github.com/usbpendrive)",
