@@ -1,3 +1,3 @@
-#REACT GRAPHBOOK
+# REACT GRAPHBOOK
 
 React using GraphQL
